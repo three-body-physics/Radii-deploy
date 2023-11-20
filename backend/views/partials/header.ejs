@@ -1,0 +1,45 @@
+<!-- views/partials/header.ejs -->
+
+<!doctype html>
+<html lang="en" ng-app>
+
+<head>
+    <title>Radii Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/home.css" type="text/css" />
+</head>
+
+<body>
+
+        <nav class="navbar navbar-default" id="navbar">
+            <div class="container">
+                <div class="navbar-header" id="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/home">Radii</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right" id="collapse-ul">                        
+                        <li><a href="#">Stories</a></li>
+                        <% if(!loggedIn) { %>                       
+                        <li><a href="/home/login">Login</a></li>
+                        <li><a href="/home/register">Register</a></li>
+                        <% } else { %>
+                        <li><a href="/home/user/<%= loggedIn._id %>">Account</a></li> 
+                        <li><a href="/home/logout">Logout</a></li> 
+                        <% } %>                     
+                        <li id="cart"><a href="/home/cart">Cart</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>

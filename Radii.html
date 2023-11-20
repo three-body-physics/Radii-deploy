@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" ng-app>
+
+<head>
+    <title>Radii Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./static/css/home.css" type="text/css" />
+</head>
+
+<body>
+    <div class="banner">
+        <nav class="navbar navbar-default" id="navbar">
+            <div class="container">
+                <div class="navbar-header" id="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Liifye</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right" id="collapse-ul">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li id="cart"><a href="#">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="bannerImage" class="container-fluid">
+            <div class="img-overlay"></div>
+            <div id="infobox" class="col-xs-10 col-md-6">
+                <h2>Welcome to Radii</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                <div class="btn btn-primary-transparent" id="scroll">Shop now</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="about">
+        <div class="row" id="slogan">
+            <div class="col-xs-12 col-md-8">
+                <h4>Quisque viverra tincidunt.</h4>
+                <p>Ut suscipit facilisis ex, quis aliquam mauris vehicula eget. Suspendisse ut accumsan enim, eget sollicitudin mauris. Maecenas viverra mollis nunc, in auctor lorem bibendum scelerisque. </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="collections">
+        <div class="row" id="collec-header">
+            <h3>Collections</h3>
+        </div>
+        <div class="row" id="img-row">
+            <!-- 45% -->
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-holder">
+                    <a href="">
+                        <div class="content-layer">
+                            <h2>Apparel</h2>
+                            <div class="btn btn-primary-transparent">View Products</div>
+                        </div>
+                        <div class="img-overlay"></div>
+                        <div class="collection-image" id="c-two"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-holder">
+                    <a href="">
+                        <div class="content-layer">
+                            <h2>City life</h2>
+                            <div class="btn btn-primary-transparent">View Products</div>
+                        </div>
+                        <div class="img-overlay"></div>
+                        <div class="collection-image" id="c-three"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-holder">
+                    <a href="">
+                        <div class="content-layer">
+                            <h2>Out Doors</h2>
+                            <div class="btn btn-primary-transparent">View Products</div>
+                        </div>
+                        <div class="img-overlay"></div>
+                        <div class="collection-image" id="c-one"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="message-section">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="message-image" id="msg-img-one">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="message-msg">
+                    <h3>ALL-WEATHER</h3>
+                    <p>Nullam hendrerit dui sed sodales laoreet. Curabitur lacinia rhoncus ex, vel ultrices purus faucibus sit amet. Proin tempus lacus sit amet arcu blandit ultricies. Cras a laoreet orci. Nullam quis nulla quis mi laoreet tempus ac sit amet eros.</p>
+                    <div class="btn btn-primary-transparent">LEARN MORE</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="message-msg">
+                    <h3>Journey</h3>
+                    <p>Nunc non tortor eget metus vestibulum hendrerit. In non lectus erat. Proin quis dapibus leo, et dictum neque. Donec id luctus orci. Phasellus felis sapien, posuere sit amet lobortis tristique, aliquet vitae enim.</p>
+                    <div class="btn btn-primary-transparent">LEARN MORE</div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="message-image" id="msg-img-two">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="featured">
+        <div class="row">
+            <h3>featured products</h3>
+        </div>
+        <div class="row" id="f-products">
+            <div class="col-xs-6 col-md-3">
+                <div class="img-holder">
+                    <img src="./static/img/p2.jpg">
+                    <div class="product-info">
+                        <a href="">
+                            <p>Fiber Bag</p>
+                            <span>£39.99</span>
+                        </a>
+                    </div>
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="img-holder">
+                    <img src="./static/img/p3.jpg">
+                    <div class="product-info">
+                        <a href="">
+                            <p>Biker Leather</p>
+                            <span>£39.99</span>
+                        </a>
+                    </div>
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="img-holder">
+                    <img src="./static/img/p4.jpg">
+                    <div class="product-info">
+                        <a href="">
+                            <p>Winter</p>
+                            <span>£39.99</span>
+                        </a>
+                    </div>
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="img-holder">
+                    <img src="./static/img/p2.jpg">
+                    <div class="product-info">
+                        <a href="">
+                            <p>Swiss</p>
+                            <span>£39.99</span>
+                        </a>
+                    </div>
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="img-holder">
+                    <img src="./static/img/p1.jpg">
+                    <div class="product-info">
+                        <a href="">
+                            <p>Swiss</p>
+                            <span>£39.99</span>
+                        </a>
+                    </div>
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="img-holder">
+                    <img src="./static/img/p3.jpg">
+                    <div class="product-info">
+                        <a href="">
+                            <p>Biker Leather</p>
+                            <span>£39.99</span>
+                        </a>
+                    </div>
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="img-holder">
+                    <img src="./static/img/p2.jpg">
+                    <div class="product-info">
+                        <a href="">
+                            <p>Fiber Bag</p>
+                            <span>£39.99</span>
+                        </a>
+                    </div>
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="img-holder">
+                    <img src="./static/img/p2.jpg">
+                    <div class="product-info">
+                        <a href="">
+                            <p>Fiber Bag</p>
+                            <span>£39.99</span>
+                        </a>
+                    </div>
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- featured end -->
+    <div class="container" id="experiences">
+        <div class="row">
+            <h4>Customers stories</h4>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div>
+                    <a href="">
+                        <div class="ex-overlay">
+                            <h4>Nunc vestibulum bibendum consequat. </h4>
+                        </div>
+                        <div class="ex-img" id="ex-one">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div>
+                    <a href="">
+                        <div class="ex-overlay">
+                            <h4>Praesent ipsum nisl, ullamcorper imperdiet urna. </h4>
+                        </div>
+                        <div class="ex-img" id="ex-two">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="newsletter">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+                <h4>Join our</h4>
+                <h1>NEWS-LETTER</h1>
+                <p>Nullam hendrerit dui sed sodales laoreet. Curabitur lacinia rhoncus ex, vel ultrices purus faucibus sit amet. Proin tempus lacus sit amet arcu blandit ultricies. Cras a laoreet orci. Nullam quis nulla quis mi laoreet tempus ac sit amet eros.</p>
+                <div class="btn btn-primary-transparent">Subscribe</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="instagram">
+        <div class="row">
+            <h4><span>Follow us on</span> Instagram</h4>
+            <p><a href=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></p>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                <div class="insta-holder">
+                    <a href="">
+                        <div class="insta-image" id="i-one"></div>
+                        <div class="insta-overlay">
+                            <h1><i class="fa fa-instagram" aria-hidden="true"></i></h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                <div class="insta-holder">
+                    <a href="">
+                        <div class="insta-image" id="i-one"></div>
+                        <div class="insta-overlay">
+                            <h1><i class="fa fa-instagram" aria-hidden="true"></i></h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                <div class="insta-holder">
+                    <a href="">
+                        <div class="insta-image" id="i-one"></div>
+                        <div class="insta-overlay">
+                            <h1><i class="fa fa-instagram" aria-hidden="true"></i></h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                <div class="insta-holder">
+                    <a href="">
+                        <div class="insta-image" id="i-one"></div>
+                        <div class="insta-overlay">
+                            <h1><i class="fa fa-instagram" aria-hidden="true"></i></h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <h4>LIIFYE.CO.UK</h4>
+                    <p>Birmingham</p>
+                    <p>West Midlands</p>
+                    <p>B64 3LS</p>
+                    <p>Tel - 01872 666-666</p>
+                    <p>Email-liifye@liifye.co.uk</p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h4>Additional Info.</h4>
+                    <p><a href="">Guarantee and Warranty</a></p>
+                    <p><a href="">FAQ</a></p>
+                    <p><a href="">Privacy Policy</a></p>
+                    <p><a href="">Shipping</a></p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and discounts.</p>
+                    <form>
+                        <input type="email" name="email" placeholder="Email address">
+                        <button class="btn btn-primary-transparent" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href="">© LIIFYE UK 2017</a></li>
+                    <li><a href="">Created by TBP</a></li>
+                    <li><a href="">Canvas Theme</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./static/js/liifye.js"></script>
+</body>
+
+</html>

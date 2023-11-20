@@ -1,0 +1,35 @@
+<%- include('./partials/header') %>
+
+<div class="container-fluid" id="user-profile">
+	<% if (user) { %>
+
+	<div class="row">
+  		<h3>Welcome back <%= user.username %></h3>		
+	</div>
+
+	<div class="row">	
+
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+		<% user.orders.forEach(function(o) { %>
+			<% var price = Math.round(o.price * 100) / 100 %>
+			<div class="row">
+			<hr>
+			<h4>Order ID: <%= o._id %></h4>			
+			<% o.products.forEach(function(p){	%>			
+				<p> Item: <a href="/home/products/<%= p.product._id %>"><%= p.product.label  %></a> - Quantity: <%= p.quantity  %> </p>			
+			<% }) %>
+			
+			<p class="total">Total: £ <%= price %></p>
+			</div>
+		<% }); %>			
+		</div>
+	</div>
+
+	<% } %>
+
+</div>
+
+
+
+
+<%- include('./partials/footer') %>
